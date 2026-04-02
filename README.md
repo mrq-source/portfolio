@@ -1,2 +1,1 @@
-# primary1
-first repository for understanding github
+#  First Portfolio 
