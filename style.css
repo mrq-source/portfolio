@@ -377,49 +377,6 @@
       color: var(--muted);
     }
 
-    .contact-section { border-top: 1px solid var(--border); }
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      align-items: start;
-    }
-    .contact-col { display: flex; flex-direction: column; gap: 1rem; }
-    .contact-card {
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      transition: border-color 0.2s;
-      text-decoration: none;
-      color: inherit;
-    }
-    .contact-card:hover { border-color: rgba(232,255,71,0.3); }
-    .contact-icon {
-      width: 40px; height: 40px;
-      background: rgba(232,255,71,0.08);
-      border-radius: 4px;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .contact-card .label {
-      font-size: 0.65rem;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 3px;
-    }
-    .contact-card .value {
-      font-family: 'Syne', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: rgba(255,255,255,0.3);
-      font-style: italic;
-    } 
-
   .contact-form-wrapper {
     display: grid;
     grid-template-columns: 1fr auto;
