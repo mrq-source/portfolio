@@ -74,7 +74,6 @@
     <div class="section-title">My arsenal.</div>
     <div class="skills-grid">
 
-      <!--unlocked skills-->
       <div class="skill-slot unlocked">
         <div class="skill-dot"></div>
         <div class="skill-name">Java</div>
@@ -100,7 +99,7 @@
         <div class="skill-name">C</div>
         <div class="skill-level">Level 3</div>
       </div>
-      <!-- locked slots  -->
+
       <div class="skill-slot locked">
         <div class="lock-icon">
           <div class="lock-body">
@@ -150,7 +149,6 @@
     <div class="section-title">Things I built.</div>
     <div class="projects-grid">
 
-      <!-- PROJECT 1 -->
       <div class="project-card">
         <div class="project-thumb" id="project1"></div>
         <div class="project-body">
@@ -164,7 +162,6 @@
         </div>
       </div>
 
-      <!-- PROJECT 2 -->
       <div class="project-card">
         <div class="project-thumb" id="project2"></div>
         <div class="project-body">
@@ -178,7 +175,6 @@
         </div>
       </div>
 
-      <!-- FUTURE PROJECT SLOTS — replace with real projects when ready -->
       <div class="project-card add-slot">
         <div class="add-icon">+</div>
         <div style="font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);">Future project</div>
@@ -190,7 +186,6 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
  <section class="contact-section" id="contact">
   <div class="section-label">// contact</div>
   <div class="section-title">Let's connect.</div>
@@ -300,9 +295,9 @@
 
   <script>
   (function () {
-    const SERVICE_ID  = 'service_0onvqtp';   // e.g. 'service_abc123'
-    const TEMPLATE_ID = 'template_pbh0hcl';  // e.g. 'template_xyz789'
-    const PUBLIC_KEY  = 'pgPoG2g9fjQrEGQ5i';   // e.g. 'aBcDeFgHiJkLmNoPq'
+    const SERVICE_ID  = 'service_0onvqtp';  
+    const TEMPLATE_ID = 'template_pbh0hcl';  
+    const PUBLIC_KEY  = 'pgPoG2g9fjQrEGQ5i'; 
  
     emailjs.init({ publicKey: PUBLIC_KEY });
  
@@ -320,7 +315,6 @@
       const email   = document.getElementById('cf-email');
       const message = document.getElementById('cf-message');
  
-      // Name
       if (!name.value.trim()) {
         name.classList.add('invalid');
         document.getElementById('err-name').classList.add('visible');
@@ -330,7 +324,6 @@
         document.getElementById('err-name').classList.remove('visible');
       }
  
-      // Email
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email.value.trim())) {
         email.classList.add('invalid');
@@ -341,7 +334,6 @@
         document.getElementById('err-email').classList.remove('visible');
       }
  
-      // Message
       if (!message.value.trim()) {
         message.classList.add('invalid');
         document.getElementById('err-message').classList.add('visible');
@@ -379,7 +371,6 @@
       }
     });
  
-    // Clear errors on input
     ['cf-name', 'cf-email', 'cf-message'].forEach(function (id) {
       document.getElementById(id).addEventListener('input', function () {
         this.classList.remove('invalid');
