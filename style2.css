@@ -1,0 +1,25 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --nav:#e6ccb2;
+    --bg1:#603808;
+    --shadow1:#6f1d1b;
+    --head1:#ff751f;
+    --txt1:#a5a5a5;
+    --sub1:#f0efec;
+
+    --bg2:#ddbea9;
+    --sub2:#8b5e34;
+    --head2:#ffedd8;
+    --txt2:#c4654d;
+    --sub2:#a47148;
+    --st2:#f3d5b5;
+
+}
+body{
+    
+}
