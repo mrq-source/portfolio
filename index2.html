@@ -2,15 +2,20 @@
 <html>
     <header>
         <title>My Portfolio</title>
+        <link rel="stylesheet" href="style2.css">   
     </header>
     <body>
         <nav>
             <div class="logo">Ks_</div>
-            <ul>
+            <ul id="nav-bar">
                 <li><a href="#hero">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#project">PROJECTS</a></li>
+                <li><button class="dropbtn"><a href="#project">PROJECTS</a></button></li>
+                <div class="dropcont">
+                    <a href="#p-1">First Project</a>
+                    <a href="#p-2">second Project</a>
+                </div>
                 <li><a href="#contact">CONTACTS</a></li>
             </ul>
         </nav>
@@ -20,5 +25,9 @@
             <h4>here</h4>
             <p>[ Full-stack Developer, aiming to create impactful digital solutions and solving real life problems.]</p>
         </div>
+        <div id="about"></div>
+        <div id="skills"></div>
+        <div id="project"></div>
+        <div id="contact"></div>
     </body>
 </html>
