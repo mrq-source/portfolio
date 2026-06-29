@@ -31,10 +31,18 @@ nav{
     background-color: var(--nav);
     display:flex;
     flex-direction: row;
-    height:2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:larger;
+    font-weight:400;
+    height:3rem;
     justify-content:space-between;
     position:fixed;
     width:100%;
+}
+.logo{
+    padding-left: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
 }
 #nav-bar{
     color:black;
@@ -50,15 +58,59 @@ nav{
     color:black;
     text-decoration: none;
 }
-.dropbtn{
-    
+.dropdown {
+    position: relative;
+}
+.dropbtn {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.arrow {
+  font-size: 0.8em; 
+  margin-left: 5px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.dropdown:hover .arrow{
+    transform: rotate(60deg);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:var(--bg2);
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: var(--head2);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 #hero{
     color: var(--bg1);
-    display: contents;
+    height: 100vh;
+    width: 100%;
 
 }
-#about{}
+.about{
+    width: 100%;
+    height:100vh;
+    background-color: var(--bg2);
+    z-index: 1;
+
+}
 #skill{}
 #project{}
 #contact{}

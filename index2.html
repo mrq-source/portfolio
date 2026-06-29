@@ -11,11 +11,14 @@
                 <li><a href="#hero">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#skills">SKILLS</a></li>
-                <li><button class="dropbtn"><a href="#project">PROJECTS</a></button></li>
-                <div class="dropcont">
-                    <a href="#p-1">First Project</a>
-                    <a href="#p-2">second Project</a>
-                </div>
+                <li class="dropdown">
+                    <div class="dropdown">
+                        <button class="dropbtn">PROJECTS<span class="arrow">▼</span></button>
+                        <div class="dropdown-content">
+                            <a href="#link1">Project 1</a>
+                            <a href="#link2">Project 2</a>
+                        </div>
+                    </div>
                 <li><a href="#contact">CONTACTS</a></li>
             </ul>
         </nav>
@@ -25,9 +28,10 @@
             <h4>here</h4>
             <p>[ Full-stack Developer, aiming to create impactful digital solutions and solving real life problems.]</p>
         </div>
-        <div id="about"></div>
-        <div id="skills"></div>
-        <div id="project"></div>
-        <div id="contact"></div>
+        <section class="about" id="about"> 
+        </div>
+        <section class="skill" id="skills"></div>
+        <section class="preject" id="project"></div>
+        <section class="contact" id="contact"></div>
     </body>
 </html>
