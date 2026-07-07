@@ -442,6 +442,54 @@
       });
     });
   })();
+  (function () {
+    var hamburger = document.getElementById('hamburger');
+    var sidebar   = document.getElementById('sidebar');
+    var overlay   = document.getElementById('sidebar-overlay');
+ 
+    function openNav() {
+      sidebar.classList.add('open');
+      overlay.classList.add('visible');
+      hamburger.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      sidebar.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('sidebar-open');
+    }
+ 
+    function closeNav() {
+      sidebar.classList.remove('open');
+      overlay.classList.remove('visible');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      sidebar.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('sidebar-open');
+    }
+ 
+    // Make closeNav globally accessible (used in onclick attributes)
+    window.closeNav = closeNav;
+ 
+    hamburger.addEventListener('click', function () {
+      if (sidebar.classList.contains('open')) {
+        closeNav();
+      } else {
+        openNav();
+      }
+    });
+ 
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && sidebar.classList.contains('open')) {
+        closeNav();
+      }
+    });
+ 
+    // Close if window resizes to desktop
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 768) {
+        closeNav();
+      }
+    });
+  })();
 </script>
 </body>
 </html>
