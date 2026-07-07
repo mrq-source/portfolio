@@ -19,18 +19,49 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-  <nav>
-    <div class="logo">Ks_</div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
+  <nav id="main-nav">
+  <div class="logo">KS_</div>
+ 
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#hero"    onclick="closeNav()">home</a></li>
+    <li><a href="#about"    onclick="closeNav()">About</a></li>
+    <li><a href="#skills"   onclick="closeNav()">Skills</a></li>
+    <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+    <li><a href="#achievements"    onclick="closeNav()">achievements</a></li>
+    <li><a href="#contact"  onclick="closeNav()">Contact</a></li>
+  </ul>
+ 
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+ 
+<div class="sidebar-overlay" id="sidebar-overlay" onclick="closeNav()"></div>
+ 
+<aside class="sidebar" id="sidebar" aria-hidden="true">
+  <div class="sidebar-header">
+    <div class="logo">KS_</div>
+    <button class="sidebar-close" onclick="closeNav()" aria-label="Close menu">✕</button>
+  </div>
+ 
+  <ul class="sidebar-links">
+    <li><a href="#hero"    onclick="closeNav()"><span class="sidebar-num">01</span>Home</a></li>
+    <li><a href="#about"    onclick="closeNav()"><span class="sidebar-num">01</span>About</a></li>
+    <li><a href="#skills"   onclick="closeNav()"><span class="sidebar-num">02</span>Skills</a></li>
+    <li><a href="#projects" onclick="closeNav()"><span class="sidebar-num">03</span>Projects</a></li>
+    <li><a href="#achievements" onclick="closeNav()"><span class="sidebar-num">03</span>Achievements</a></li>
+    <li><a href="#contact"  onclick="closeNav()"><span class="sidebar-num">04</span>Contact</a></li>
+  </ul>
+ 
+  <div class="sidebar-footer">
+    <div class="sidebar-status">
+      <div class="status-dot"></div>
+      Open to opportunities
+    </div>
+  </div>
+</aside>
   <div id="hero">
     <div class="hero-grid-bg"></div>
     <div class="hero-tag">Available for work</div>
