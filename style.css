@@ -18,7 +18,7 @@
       background: var(--dark);
       color: #fff;
       font-family: 'Space Mono', monospace;
-      min-height: 100vh;
+      min-height: 100dvh;
       overflow-x: hidden;
     }
 
